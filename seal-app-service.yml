@@ -13,18 +13,11 @@ spring:
       max-request-size: 5MB
   flyway:
     enabled: false
-  thymeleaf:
-    cache: false
-    check-template: true
-    check-template-location: true
-    enabled: true
-    encoding: UTF-8
-    mode: HTML
-    prefix: classpath:/templates/
-    suffix: .html
 logging:
   file: /var/log/levels-service-log/api.log
 server:
+  servlet:
+    context-path: /seal
   port: 9001
   compression:
     enabled: true
