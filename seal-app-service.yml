@@ -44,9 +44,9 @@ spring:
   profiles: local
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    username: seal
-    password: Blessing**4
-    url: jdbc:mysql://localhost:3306/seal?serverTimezone=UTC
+    username: root
+    password: blessing
+    url: jdbc:mysql://localhost:3306/sealdb?serverTimezone=UTC&createDatabaseIfNotExist=true
   jpa:
     show-sql: true
     properties:
